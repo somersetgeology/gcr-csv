@@ -9,9 +9,17 @@ This application has been built using open source software available from the Op
 
 Many of the inluded map layers are derived from open data sources, or sources with liberal licensing.  If you copy or adapt this application you must comply with the copyright and terms of use of the relevant data sources. All relevant attribution should be displayed.
 
-Bing Maps (Aerial and Ordnance Survey layers) {c} Microsoft Corporation You must register and use your own Bing Maps Key and comply with the relevant Terms. The free Bing Maps licence allows small-scale, non-commercial use.
+Bing Maps (Aerial and Ordnance Survey layers) &copy; Microsoft Corporation You must register and use your own Bing Maps Key and comply with the relevant Terms. The free Bing Maps licence allows small-scale, non-commercial use.
 
-Hillshade 5m. Derived from OS Terrain 5 obtained under educational licence from EDINA Digimap. For educational use only.
+Historic OS maps &copy; National Library of Scotland (NLS)
 
-Historic OS maps 
+OS OpenData
+
+Hillshade 5m. Derived from OS Terrain 5 &copy; Ordnance Survey 2020. obtained under educational licence from EDINA Digimap. For educational use only.
+
+Hillshade 25m. Derived from EU-DEM &copy; Copernicus Programme funded by the European Union.
+
+Hillshade 2m, 1m, 50cm and 25cm  &copy; Environmnent Agency DEFRA OGL
+
+
 
