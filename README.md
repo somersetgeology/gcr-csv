@@ -3,7 +3,7 @@ Geological Features in south west England
 
 Summary: Not for navigational or commercial use. Educational use only
 
-(c) Geoff Rowland Copyright and database rights 2020
+&copy; Geoff Rowland Copyright and database rights 2020
 
 This application has been built using open source software available from the Opens Source Geospatial Foundation OSGeo. Specifically, QGIS Desktop (The leading Free and Open Source Desktop GIS), GDAL/OGR (C++ translator library for more than 200 raster and vector geospatial data formats) and Leaflet (Open-source JavaScript library for mobile-friendly interactive maps).
 
