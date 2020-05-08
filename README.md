@@ -17,7 +17,7 @@ Historic OS maps &copy; National Library of Scotland (NLS) TMS
 
 OS OpenData
 
-Hillshade 5m. Derived from OS Terrain 5 &copy; Ordnance Survey 2020. obtained under educational licence from EDINA Digimap. For educational use only.
+Hillshade 5m. Derived from OS Terrain 5 &copy; Ordnance Survey 2020. Obtained under educational licence from EDINA Digimap. For educational use only.
 
 Hillshade 25m. Derived from EU-DEM &copy; Copernicus Programme funded by the European Union.
 
