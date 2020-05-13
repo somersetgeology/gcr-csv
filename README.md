@@ -1,7 +1,9 @@
 # GeoFeature
-Geological Features in south west England 
+Geological Features in south west England
 
-Summary: Not for navigational, planning or commercial use. Educational use only
+Demo: https://geoffrowland.github.io/geofeature/
+
+Not for navigational, planning or commercial use. Educational use only
 
 This web map provides a high-resolution hillshade terrain map for east Devon, Dorset Somerset and adjoining regions.
 
