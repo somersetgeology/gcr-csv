@@ -375,6 +375,20 @@
         minZoom: 11,
         bounds: L.latLngBounds([[50.1, -4.69],[51.70, -0.7]])
 	});
+	var cornwall = L.tileLayer('https://geo.nls.uk/mapdata2/os/25_inch/cornwall/{z}/{x}/{y}.png', {
+		format: 'image/png',
+        transparent: true,
+        opacity: 0.5,
+        minZoom: 11,
+        bounds: L.latLngBounds([[49.875417441, -6.39116352],[50.94521927, -4.16]])
+	})
+	var cornwallholes = L.tileLayer('https://geo.nls.uk/mapdata3/os/25_inch/holes_england/{z}/{x}/{y}.png', {
+		format: 'image/png',
+        transparent: true,
+        opacity: 0.5,
+        minZoom: 11,
+        bounds: L.latLngBounds([[49.875417441, -6.39116352],[50.94521927, -4.36]])
+	})
 	var dorset = L.tileLayer('https://geo.nls.uk/mapdata2/os/25_inch/dorset/{z}/{x}/{y}.png', {
 		format: 'image/png',
         transparent: true,
@@ -429,6 +443,9 @@
         opacity: 0.5,
         minZoom: 11
 	});
+	var cornwall1900 = L.layerGroup([cornwallholes, cornwall],{
+		attribution: 'Historic OS maps © <a target = "_blank" href="https://maps.nls.uk/" title="National Library of Scotland">NLS</a>'
+    });
 	var devon1900 = L.layerGroup([devonholes, devon],{
 		attribution: 'Historic OS maps © <a target = "_blank" href="https://maps.nls.uk/" title="National Library of Scotland">NLS</a>'
     });
@@ -600,6 +617,7 @@
 		"OS Current": os,
 		"OS OpenData": opendataonly,
 		"OpenStreetMap": osm,
+		"OS Cornwall ~1900": cornwall1900,
 		"OS Devon ~1900": devon1900,
 		"OS Dorset ~1900": dorset1900,
 		"OS Somerset ~1900": somerset1900,
