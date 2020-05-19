@@ -49,7 +49,8 @@
 	// OBTAIN Bing Key from
 	var BING_KEY = 'AohFvM_FD-p0478UuVC3ErCaoLzkJH_ftz_gGnSB9iUW_15xRgnZEf4cVkptGa7G'; //My
     //var BING_KEY = 'AuhiCJHlGzhg93IqUH_oCpl_-ZUrIE6SPftlyGYUvr9Amx5nzA-WqGcPquyFZl4L'; //Plugin default
-    //
+    //////////////////////////////////////////////////
+    
 	var blank = L.tileLayer('');
     var hill25 = L.tileLayer('https://geoffrowland.github.io/Hillshade-25m/{z}/{x}/{y}.png', {
 		tms: true,
@@ -182,16 +183,7 @@
     var geosup = L.layerGroup([bgs625sup, bgs50sup], {
 		attribution: '<a target="_blank" href = "https://www.bgs.ac.uk/data/services/wms.html" title="British Geological Survey">BGS</a> maps © UKRI 2020'
 	});
-	var hill5e = L.tileLayer('https://geoffrowland.github.io/Hillshade-5m-East/{z}/{x}/{y}.png', {
-		tms: true,
-        format: 'image/png',
-        transparent: true,
-        opacity:1.0,
-        minZoom: 11,
-        maxNativeZoom: 15,
-        attribution: '&copy; Crown copyright and database rights 2020 Ordnance Survey (10002525) <a title="OS Terrain 5" target="_blank" href="https://www.ordnancesurvey.co.uk/business-government/products/terrain-5">OS Terrain 5</a>'
-	});
-	var hill5w = L.tileLayer('https://geoffrowland.github.io/Hillshade-5m-West/{z}/{x}/{y}.png', {
+	var hill5 = L.tileLayer('https://geoffrowland.github.io/Hillshade-5m/{z}/{x}/{y}.png', {
 		tms: true,
         format: 'image/png',
         transparent: true,
@@ -316,7 +308,7 @@
         maxZoom: 24        
 	});
 	
-	var terraindtm = L.layerGroup([hill25, hill5e, hill5w, hill2surf, hill2, hill1c, hill1d, hill1dds, hill1ds, hill1dse, hill1dh, hill50e, hill50w, hillkeatesgrey],{
+	var terraindtm = L.layerGroup([hill25, hill5, hill2surf, hill2, hill1c, hill1d, hill1dds, hill1ds, hill1dse, hill1dh, hill50e, hill50w, hillkeatesgrey],{
 		attribution: '&copy <a title="Environment Agency LiDAR DTM" target="_blank" href="https://environment.data.gov.uk/DefraDataDownload/?Mode=survey">EA</a> copyright and database right 2020'
 	});
     var osmbase = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -387,7 +379,7 @@
         transparent: true,
         opacity: 0.5,
         minZoom: 11,
-        bounds: L.latLngBounds([[49.875417441, -6.39116352],[50.94521927, -4.36]])
+        bounds: L.latLngBounds([[49.875417441, -6.39116352],[50.94521927, -4.40]])
 	})
 	var dorset = L.tileLayer('https://geo.nls.uk/mapdata2/os/25_inch/dorset/{z}/{x}/{y}.png', {
 		format: 'image/png',
