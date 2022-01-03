@@ -1,7 +1,7 @@
-# GeoFeature
+# GeoFeature2D
 Geological Features in south west England
 
-Demo: https://geoffrowland.github.io/geofeature/
+Demo: https://geoffrowland.github.io/geofeature2D/
 
 Not for navigational, planning or commercial use. Educational use only
 
