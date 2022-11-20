@@ -389,7 +389,7 @@ var dsv = _dereq_('dsv'),
 //function isEasting(f) { return !!f.match(/Easting/i); }
 //function isNorthing(f) { return !!f.match(/Northing/i); }
 
-function isBng(f) { return !!f.match(/GridRef/i); }
+function isBng(f) { return !!f.match(/GRID_REF/i); }
 
 function keyCount(o) {
     return (typeof o == 'object') ? Object.keys(o).length : 0;
