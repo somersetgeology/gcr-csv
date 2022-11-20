@@ -1,7 +1,7 @@
-# GeoFeature2D
-Geological Features in south west England
+# Geological Conservation Review sites
+Geological Conservation Review sites in Dorset
 
-Demo: https://geoffrowland.github.io/geofeature2D/
+Demo: https://dorsetgeology.github.io/gcr-csv/
 
 Not for navigational, planning or commercial use. Educational use only
 
