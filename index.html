@@ -533,19 +533,19 @@
     });
     var ridgewayData = L.geoJson(null, {
 		pointToLayer: function (feature, latlng) {
-		        if (feature.properties.Type == 'Kiln'){
-			        return L.marker(latlng, {icon: redIcon})
-			}else if(feature.properties.Type == 'Chalk'){
-				return L.marker(latlng, {icon: greenIcon})
-			}else if(feature.properties.Type == 'Kimmeridge'){
-				return L.marker(latlng, {icon: greyIcon})
-			}else if(feature.properties.Type == 'Building'){
-				return L.marker(latlng, {icon: yellowIcon})
+		        // if (feature.properties.Type == 'Kiln'){
+			//      return L.marker(latlng, {icon: redIcon})
+			// }else if(feature.properties.Type == 'Chalk'){
+			//	return L.marker(latlng, {icon: greenIcon})
+			// }else if(feature.properties.Type == 'Kimmeridge'){
+			//	return L.marker(latlng, {icon: greyIcon})
+			// }else if(feature.properties.Type == 'Building'){
+			//	return L.marker(latlng, {icon: yellowIcon})
 			// }else if(feature.properties.Type == 'Oil-shale'){
 			//	return L.marker(latlng, {icon: blackIcon})
-			}else if(feature.properties.Type == 'Ironstone'){
-				return L.marker(latlng, {icon: orangeIcon})
-			}else{
+			// }else if(feature.properties.Type == 'Ironstone'){
+			//	return L.marker(latlng, {icon: orangeIcon})
+			// }else{
 				return L.marker(latlng, {icon: blueIcon})
 			}
         },
