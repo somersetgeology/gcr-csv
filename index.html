@@ -555,21 +555,21 @@
 			     '<br />' + feature.properties.GridRef.split(" ")[0] + ' ' + feature.properties.GridRef.split(" ")[1].substr(0,3) + ' ' + feature.properties.GridRef.split(" ")[2].substr(0,3)
 			);
             layer.bindPopup(
-            'Feature: ' + feature.properties.Feature +
-            '<br />Parish: ' + feature.properties.Parish + 
-            '<br />Group: ' + feature.properties.Group +
-            '<br />Formation: ' + feature.properties.Formation +
-            '<br />Member: ' + feature.properties.Member +
-            '<br />1880s: ' + feature.properties.First +
-            '<br />1900s: ' + feature.properties.Second +
-            '<br />1920s: ' + feature.properties.Third +
-            '<br />1950s: ' + feature.properties.New +
-            '<br />LIDAR: ' + feature.properties.LIDAR +
-            '<br />Reference: ' + feature.properties.Reference +
-            '<br />Notes: ' + feature.properties.Notes +
+            //'Feature: ' + feature.properties.Feature +
+            //'<br />Parish: ' + feature.properties.Parish + 
+            //'<br />Group: ' + feature.properties.Group +
+            //'<br />Formation: ' + feature.properties.Formation +
+            //'<br />Member: ' + feature.properties.Member +
+            //'<br />1880s: ' + feature.properties.First +
+            //'<br />1900s: ' + feature.properties.Second +
+            //'<br />1920s: ' + feature.properties.Third +
+            //'<br />1950s: ' + feature.properties.New +
+            //'<br />LIDAR: ' + feature.properties.LIDAR +
+            //'<br />Reference: ' + feature.properties.Reference +
+            //'<br />Notes: ' + feature.properties.Notes +
             '<br />Short Grid Ref: ' + feature.properties.GridRef.split(" ")[0] + ' ' + feature.properties.GridRef.split(" ")[1].substr(0,3) + ' ' + feature.properties.GridRef.split(" ")[2].substr(0,3) +
-            '<br />Long Grid Ref: ' + feature.properties.GridRef +
-            '<br />Lng: ' + feature.geometry.coordinates[0].toString() + ' Lat: ' + feature.geometry.coordinates[1].toString()
+            '<br />Long Grid Ref: ' + feature.properties.GridRef
+            //'<br />Lng: ' + feature.geometry.coordinates[0].toString() + ' Lat: ' + feature.geometry.coordinates[1].toString()
             );
         }
     });
