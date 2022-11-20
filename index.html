@@ -551,11 +551,11 @@
         },
         onEachFeature: function(feature, layer) {
 			layer.bindTooltip(
-			    feature.properties.Feature +
+			    feature.properties.GCR_NAME +
 			     '<br />' + feature.properties.GridRef.split(" ")[0] + ' ' + feature.properties.GridRef.split(" ")[1].substr(0,3) + ' ' + feature.properties.GridRef.split(" ")[2].substr(0,3)
 			);
             layer.bindPopup(
-            //'Feature: ' + feature.properties.Feature +
+            'Feature: ' + feature.properties.GCR_NAME +
             //'<br />Parish: ' + feature.properties.Parish + 
             //'<br />Group: ' + feature.properties.Group +
             //'<br />Formation: ' + feature.properties.Formation +
