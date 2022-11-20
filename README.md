@@ -1,5 +1,5 @@
 # Geological Conservation Review sites
-Geological Conservation Review sites in Dorset
+Geological Conservation Review sites in Somersett
 
 Demo: https://somersetgeology.github.io/gcr-csv/
 
