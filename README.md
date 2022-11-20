@@ -1,7 +1,7 @@
 # Geological Conservation Review sites
 Geological Conservation Review sites in Dorset
 
-Demo: https://dorsetgeology.github.io/gcr-csv/
+Demo: https://somersetgeology.github.io/gcr-csv/
 
 Not for navigational, planning or commercial use. Educational use only
 
