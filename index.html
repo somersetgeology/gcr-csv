@@ -552,7 +552,7 @@
         onEachFeature: function(feature, layer) {
 			layer.bindTooltip(
 			    feature.properties.GCR_NAME +
-			     '<br />' + feature.properties.GridRef.split(" ")[0] + ' ' + feature.properties.GridRef.split(" ")[1].substr(0,3) + ' ' + feature.properties.GridRef.split(" ")[2].substr(0,3)
+			     '<br />' + feature.properties.GRID_REF.split(" ")[0] + ' ' + feature.properties.GRID_REF.split(" ")[1].substr(0,3) + ' ' + feature.properties.GRID_REF.split(" ")[2].substr(0,3)
 			);
             layer.bindPopup(
             'Site: ' + feature.properties.GCR_NAME +
@@ -567,8 +567,8 @@
             //'<br />LIDAR: ' + feature.properties.LIDAR +
             //'<br />Reference: ' + feature.properties.Reference +
             //'<br />Notes: ' + feature.properties.Notes +
-            '<br />Short Grid Ref: ' + feature.properties.GridRef.split(" ")[0] + ' ' + feature.properties.GridRef.split(" ")[1].substr(0,3) + ' ' + feature.properties.GridRef.split(" ")[2].substr(0,3) +
-            '<br />Long Grid Ref: ' + feature.properties.GridRef +
+            '<br />Short Grid Ref: ' + feature.properties.GRID_REF.split(" ")[0] + ' ' + feature.properties.GRID_REF.split(" ")[1].substr(0,3) + ' ' + feature.properties.GRID_REF.split(" ")[2].substr(0,3) +
+            '<br />Long Grid Ref: ' + feature.properties.GRID_REF +
             '<br />Lng: ' + feature.geometry.coordinates[0].toString() + ' Lat: ' + feature.geometry.coordinates[1].toString()
             );
         }
