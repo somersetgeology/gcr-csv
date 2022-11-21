@@ -153,7 +153,8 @@
         maxNativeZoom: 18,
         maxZoom: 24      	
 	});
-    var bgs625bed = L.tileLayer.betterWms('http://ogc.bgs.ac.uk/cgi-bin/BGS_Bedrock_and_Superficial_Geology/wms', {
+    // var bgs625bed = L.tileLayer.betterWms('http://ogc.bgs.ac.uk/cgi-bin/BGS_Bedrock_and_Superficial_Geology/wms', {
+    var bgs625bed = L.tileLayer.betterWms('https://dorsetgeologistsassociation.org/bgs/cgi-bin/BGS_Bedrock_and_Superficial_Geology/wms', {
         layers: 'GBR_BGS_625k_BLS',
         transparent: true,
         format: 'image/png',
@@ -163,7 +164,8 @@
         minZoom: 0,
         maxZoom: 12
     });
-    var bgs625sup = L.tileLayer.betterWms('http://ogc.bgs.ac.uk/cgi-bin/BGS_Bedrock_and_Superficial_Geology/wms', {
+    // var bgs625sup = L.tileLayer.betterWms('http://ogc.bgs.ac.uk/cgi-bin/BGS_Bedrock_and_Superficial_Geology/wms', {
+    var bgs625sup = L.tileLayer.betterWms('https://dorsetgeologistsassociation.org/bgs/cgi-bin/BGS_Bedrock_and_Superficial_Geology/wms', {
         layers: 'GBR_BGS_625k_SLS',
         transparent: true,
         format: 'image/png',
