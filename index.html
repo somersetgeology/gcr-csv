@@ -358,62 +358,14 @@
         maxNativeZoom: 17
 	});
 		
-	var holes = L.tileLayer('https://geo.nls.uk/mapdata3/os/25_inch/holes_england/{z}/{x}/{y}.png', {
+	var somerset1= L.tileLayer('https://geo.nls.uk/mapdata2/os/25_inch/somerset1/{z}/{x}/{y}.png', {
 		format: 'image/png',
         transparent: true,
         opacity: 0.5,
         minZoom: 11,
-        bounds: L.latLngBounds([[50.1, -4.69],[51.70, -0.7]])
+	bounds: L.latLngBounds([[50.82, -3.84],[51.52, -2.21]])
 	});
-	var cornwall = L.tileLayer('https://geo.nls.uk/mapdata2/os/25_inch/cornwall/{z}/{x}/{y}.png', {
-		format: 'image/png',
-        transparent: true,
-        opacity: 0.5,
-        minZoom: 11,
-        bounds: L.latLngBounds([[49.875417441, -6.39116352],[50.94521927, -4.16]])
-	})
-	var cornwallholes = L.tileLayer('https://geo.nls.uk/mapdata3/os/25_inch/holes_england/{z}/{x}/{y}.png', {
-		format: 'image/png',
-        transparent: true,
-        opacity: 0.5,
-        minZoom: 11,
-        bounds: L.latLngBounds([[49.875417441, -6.39116352],[50.94521927, -4.40]])
-	})
-	var dorset = L.tileLayer('https://geo.nls.uk/mapdata2/os/25_inch/dorset/{z}/{x}/{y}.png', {
-		format: 'image/png',
-        transparent: true,
-        opacity: 0.5,
-        minZoom: 11,
-        bounds: L.latLngBounds([[50.51, -2.96],[51.09, -1.79]])
-	});
-	var dorsetholes = L.tileLayer('https://geo.nls.uk/mapdata3/os/25_inch/holes_england/{z}/{x}/{y}.png', {
-		format: 'image/png',
-        transparent: true,
-        opacity: 0.5,
-        minZoom: 11,
-        bounds: L.latLngBounds([[50.51, -2.96],[51.09, -1.79]])
-	});
-	var devon = L.tileLayer('https://geo.nls.uk/mapdata2/os/25_inch/devon/{z}/{x}/{y}.png', {
-		format: 'image/png',
-        transparent: true,
-        opacity: 0.5,
-        minZoom: 11,
-        bounds: L.latLngBounds([[50.195, -4.68],[51.25, -2.857]])
-	});
-	var devonholes = L.tileLayer('https://geo.nls.uk/mapdata3/os/25_inch/holes_england/{z}/{x}/{y}.png', {
-		format: 'image/png',
-        transparent: true,
-        opacity: 0.5,
-        minZoom: 11,
-        bounds: L.latLngBounds([[50.195, -4.68],[51.25, -2.857]])
-	});
-	var hampshire = L.tileLayer('https://geo.nls.uk/mapdata2/os/25_inch/hampshire/{z}/{x}/{y}.png', {
-		format: 'image/png',
-        transparent: true,
-        opacity: 0.5,
-        minZoom: 11
-	});
-	var somerset = L.tileLayer('https://geo.nls.uk/mapdata3/os/25_inch/somerset/{z}/{x}/{y}.png', {
+	var somerset = L.tileLayer('https://mapseries-tilesets.s3.amazonaws.com/25_inch/somerset/{z}/{x}/{y}.png', {
 		format: 'image/png',
         transparent: true,
         opacity: 0.5,
@@ -427,35 +379,11 @@
         minZoom: 11,
         bounds: L.latLngBounds([[50.82, -3.84],[51.52, -2.21]])
 	});
-	var wiltshire = L.tileLayer('https://geo.nls.uk/mapdata2/os/25_inch/wiltshire/{z}/{x}/{y}.png', {
-		format: 'image/png',
-        transparent: true,
-        opacity: 0.5,
-        minZoom: 11
-	});
-	var cornwall1900 = L.layerGroup([cornwallholes, cornwall],{
-		attribution: 'Historic OS maps © <a target = "_blank" href="https://maps.nls.uk/" title="National Library of Scotland">NLS</a>'
-    });
-	var devon1900 = L.layerGroup([devonholes, devon],{
-		attribution: 'Historic OS maps © <a target = "_blank" href="https://maps.nls.uk/" title="National Library of Scotland">NLS</a>'
-    });
-	var dorset1900 = L.layerGroup([dorsetholes, dorset],{
-		attribution: 'Historic OS maps © <a target = "_blank" href="https://maps.nls.uk/" title="National Library of Scotland">NLS</a>'
-    });
+
 	var somerset1900 = L.layerGroup([somersetholes, somerset],{
 		attribution: 'Historic OS maps © <a target = "_blank" href="https://maps.nls.uk/" title="National Library of Scotland">NLS</a>'
     });
-	var county = L.layerGroup([holes, dorset, devon, hampshire, somerset, wiltshire],{
-		attribution: 'Historic OS maps © <a target = "_blank" href="https://maps.nls.uk/" title="National Library of Scotland">NLS</a>'
-    });
-	var seaton = L.tileLayer('https://maps.georeferencer.com/georeferences/208d30c7-844c-526b-ba35-3a19588cdf34/2020-04-03T11:51:56.228120Z/map/{z}/{x}/{y}.png?key=ocVvnTCmpvlUMRSjUJG1', {
-		format: 'image/png',
-        transparent: true,
-        opacity: 1.0,
-	attribution: '<a target = "_blank" title="British Library" href="https://www.bl.uk/onlinegallery/onlineex/ordsurvdraw/a/002osd000000005u00341000.html">BL</a>'
-        //minZoom: 11,
-        //bounds: L.latLngBounds([[50.82, -3.84],[51.52, -2.21]])
-	});
+
     var parish = L.geoJSON(dorsetParish,{
         onEachFeature: function(feature, layer) {
             layer.bindPopup(
@@ -607,11 +535,8 @@
 		"OS Current": os,
 		"OS OpenData": opendataonly,
 		"OpenStreetMap": osm,
-		"OS Cornwall ~1900": cornwall1900,
-		"OS Devon ~1900": devon1900,
-		"OS Dorset ~1900": dorset1900,
+		"OS Somerset ~1880": somerset1,
 		"OS Somerset ~1900": somerset1900,
-		// "Axmouth 1806": seaton,
 		"Geology Bedrock": geobed,
 		"Geology Surface": geosup,
 		"Geology Landslip": bgs50mass,
@@ -630,8 +555,8 @@
 		'opendataonly': opendataonly,
 		'osm': osm,
 		'osmbase': osmbase,
-		'county': county,
-		'dorset1900': dorset1900,
+	        'somersett1880': dorset1,
+		'somersett1900': dorset1900,
 	        // 'seaton':seaton,
 		'aerialtransp': aerialtransp,
 		'geobed': geobed,
