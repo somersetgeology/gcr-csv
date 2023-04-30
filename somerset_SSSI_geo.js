@@ -1,4 +1,4 @@
-var somersetGeoSSSI{
+var somersetGeoSSSI = {
 "type": "FeatureCollection",
 "name": "somerset",
 "features": [
