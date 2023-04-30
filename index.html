@@ -387,7 +387,7 @@
         var sssi = L.geoJSON(somersetGeoSSSI,{
         onEachFeature: function(feature, layer) {
             layer.bindPopup(
-                feature.properties.Name
+                feature.properties.SSSI_NAME
             );
         },		
         "color": "#000033",
