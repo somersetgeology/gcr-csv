@@ -384,7 +384,17 @@
 	var somerset1900 = L.layerGroup([somersetholes, somerset],{
 		attribution: 'Historic OS maps © <a target = "_blank" href="https://maps.nls.uk/" title="National Library of Scotland">NLS</a>'
         });
-
+        var sssi = L.geoJSON(somersetGeoSSSI,{
+        onEachFeature: function(feature, layer) {
+            layer.bindPopup(
+                feature.properties.Name
+            );
+        },		
+        "color": "#000033",
+        "weight": 2,
+        "opacity": 0.5,
+        "fillOpacity": 0,2		
+	});
         var parish = L.geoJSON(somersetParish,{
         onEachFeature: function(feature, layer) {
             layer.bindPopup(
@@ -544,7 +554,8 @@
 		"Geology Artificial": bgs50art,
 		"Geology Linear": geolin,
 		"Parish": parish,
-		"GCR Sites": ridgeway
+		"GCR Sites": ridgeway,
+		"Geo SSSIs": sssi
 	};
     var allMapLayers = { 
 		'terraindtm': terraindtm,
@@ -566,6 +577,7 @@
 		'bgs50art': bgs50art,
 		'geolin': geolin,
 		'parish': parish,
+	        'sssi': sssi,
 		'ridgeway': ridgeway
 	};
     var osmGeocoder = new L.Control.OSMGeocoder();
