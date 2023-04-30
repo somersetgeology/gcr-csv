@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="Control.OSMGeocoder.css" />
     <script src="Control.OSMGeocoder.js"></script>
     <script src="SY68exogyraBeds.js"></script>
-    <script src="dorsetParish.js"></script>
+    <script src="somersetParish.js"></script>
     <script src="faultsUK.js"></script>
     <script src="dykesUK.js"></script>
 	<style>
@@ -382,9 +382,9 @@
 
 	var somerset1900 = L.layerGroup([somersetholes, somerset],{
 		attribution: 'Historic OS maps © <a target = "_blank" href="https://maps.nls.uk/" title="National Library of Scotland">NLS</a>'
-    });
+        });
 
-    var parish = L.geoJSON(dorsetParish,{
+        var parish = L.geoJSON(somersetParish,{
         onEachFeature: function(feature, layer) {
             layer.bindPopup(
                 feature.properties.NAME
